@@ -1,0 +1,19 @@
+p, h1{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    color: #F59E0B;
+    font-size: 4rem;
+}
+#homeContent{
+    top: 30%;
+}
+main > div:nth-child(2){
+    background-color: #FFF7F1;
+}
+#pointer{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 100%;
+}

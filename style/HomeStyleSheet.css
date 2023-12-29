@@ -1,11 +1,12 @@
 p, h1{
     font-family: 'Poppins', sans-serif;
+    color: #757070;
 }
 h1{
     color: #F59E0B;
     font-size: 4rem;
 }
-#homeContent{
+#homeContent, #aboutContent {
     top: 30%;
 }
 main > div:nth-child(2){

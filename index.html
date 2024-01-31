@@ -6,6 +6,7 @@
     <meta name="viewPort" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="style/HomeStyleSheet.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 <header class="navbar navbar-expand-lg bd-navbar sticky-top">
@@ -20,16 +21,16 @@
                 </a>
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link " href="#home">HOME</a>
+                        <a class="nav-link animated-link" href="#home">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">ABOUT</a>
+                        <a class="nav-link animated-link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link animated-link" href="#experience">EXPERIENCE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">EXPERIENCE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">PROJECTS</a>
+                        <a class="nav-link animated-link" href="#">PROJECTS</a>
                     </li>
                 </ul>
             </div>
@@ -37,12 +38,12 @@
     </nav>
 </header>
 <main id="home">
-    <div>
+    <div class="position-relative">
         <div class="container-xxl bd-gutter mt-2 bd-layout">
             <div class="row">
-                <div class="col-6">
-                    <div class="position-relative" id="homeContent">
-                        <h1>Hey! I'm</h1>
+                <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="position-relative ms-3" id="homeContent" data-aos="fade-up">
+                        <h1 style="color:#000;">Hey! I'm</h1>
                         <h1>Ujitha Migara</h1>
                         <p class="fs-4">
                             I am currently a student at the Institute <br> of Software Engineering (IJSE), where I am pursuing my studies in Software Engineering.
@@ -55,30 +56,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <img src="assets/img/Ujitha_Migara_Image/UjithaOfficailPicture.webp" alt="Ujitha Migara image">
+                <div class="col col-lg-6 col-md-6 col-sm-12 col-12" data-aos="fade-up">
+                    <img class="col-12 col-sm-12 " src="assets/img/Ujitha_Migara_Image/UjithaOfficailPicture.png" alt="Ujitha Migara image">
                 </div>
             </div>
+        </div>
+        <div class="col-12" id="background">
+
+        </div>
+        <div class="col-12" id="background2">
+
         </div>
     </div>
     <div>
         <div id="about" class="container-xxl bd-gutter bd-layout position-relative">
-            <div id="pointer" class="position-absolute top-0 start-50 translate-middle shadow-lg">
+            <div id="pointer" data-aos="fade-up" class="position-absolute top-0 start-50 translate-middle shadow-lg">
                 <img class="position-absolute top-50 start-50 translate-middle" src="assets/img/aeeow.png" alt="arrow image">
             </div>
             <div class="row">
-                <div class="col-6">
-                    <img class="mt-5" src="assets/img/Ujitha_Migara_Image/aboutImage.png" alt="Ujitha Migara image" width="621">
+                <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
+                    <img  data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="mt-5 col-12 col-sm-12" src="assets/img/Ujitha_Migara_Image/aboutImage.png" alt="Ujitha Migara image" width="621">
                 </div>
-                <div class="col-6">
-                    <div class="position-relative " id="aboutContent">
-                        <h2>I’m a Software developer</h2>
+                <div class="col col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="position-relative p-5" id="aboutContent" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <h2>Who Am I?</h2>
                         <p class="fs-4">
-                            I am currently a student at the Institute of
-                            Software Engineering (IJSE), where I am pursuing
-                            my studies in Software Engineering. I have strong
-                            passion for technology and the ever-evolving field
-                            of software divelopment.
+                            I am Ujitha Migara, currently pursuing a Graduate Diploma in Software Engineering program at the Institute of Software Engineering. My journey in the world of technology has been exciting, and I am continually seeking opportunities to expand my knowledge and skills.
 
                             I am constantly seeking opportunities to enhance
                             my skills and broaden my knowledge in the
@@ -96,13 +99,13 @@
         </div>
     </div>
     <div>
-        <div id="experience" class="container-xxl bd-gutter bd-layout position-relative">
+        <div id="experience" class="container-xxl bd-gutter bd-layout position-relative pb-5 mb-5">
             <div class="row">
                 <div class="col-12 ">
-                    <div class="position-absolute  start-50 translate-middle-x">
-                        <h2 class="mt-5" >Experience</h2>
+                    <div class="position-absolute  start-50 translate-middle-x experience">
+                        <h2 data-aos="fade-up" class="mt-5" >Experience</h2>
                     </div>
-                    <p class="text-center start-50 translate-middle-x fs-4 " id="experienceP">
+                    <p data-aos="fade-up" class="text-center start-50 translate-middle-x fs-4 experience" id="experienceP">
                         I am currently a student at the Institute of Java Software Engineering
                         (IJSE), where I am pursuing my studies in Software Engineering
                     </p>
@@ -115,9 +118,9 @@
                         </div>
 
                         <div data-aos="fade-up"></div>
-                        <div data-aos="fade-up">
+                        <div data-aos="fade-up-left">
                             <img src="" alt="">
-                            <h4>Higher National Diplomas</h4>
+                            <h4>Higher National Diploma</h4>
                             <p class="fs-4">
                                 IJSE GDSE program <br>
                                 2022-09 onword
@@ -129,7 +132,7 @@
                             <div></div>
                         </div>
                         <div data-aos="fade-up"></div>
-                        <div data-aos="fade-up">
+                        <div data-aos="fade-up-right">
                             <img src="" alt="">
                             <h4>GCE Advance Level</h4>
                             <p class="fs-4">
@@ -143,7 +146,7 @@
                             <div></div>
                         </div>
                         <div data-aos="fade-up"></div>
-                        <div data-aos="fade-up">
+                        <div data-aos="fade-up-left">
                             <img src="" alt="">
                             <h4>GCE Ordinary Level</h4>
                             <p class="fs-4">
@@ -156,13 +159,50 @@
             </div>
         </div>
     </div>
+    <div>
+        <div id="projects" class="container-xxl bd-gutter bd-layout position-relative"></div>
+        <div class="row">
+            <div class="col-6">
+                <div></div>
+            </div>
+            <div class="col-6">
+                <div></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div></div>
+            </div>
+            <div class="col-6">
+                <div></div>
+            </div>
+        </div>
+    </div>
 </main>
 
 <footer>
-
+    <div>
+        <a href=""><img src="assets/img/icons/facebook.png" alt="FaceBook"></a>
+        <a href=""><img src="assets/img/icons/linkedin.png" alt="FaceBook"></a>
+        <a href=""><img src="assets/img/icons/whatsapp.png" alt="FaceBook"></a>
+        <a href=""><img src="assets/img/icons/github.png" alt="FaceBook"></a>
+    </div>
 </footer>
 
 <script src="js/bootstrap.min.js" ></script>
 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+    window.addEventListener('scroll', function() {
+        var header = document.querySelector('header');
+
+        if (window.scrollY > 0) {
+            header.classList.add('scrolled-header');
+        } else {
+            header.classList.remove('scrolled-header');
+        }
+    });
+</script>
 </body>
 </html>
